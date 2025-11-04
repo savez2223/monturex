@@ -1,19 +1,30 @@
-import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo1.png";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  // Scroll to section smoothly
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // When clicking logo → go home + scroll to top
+  const handleLogoClick = () => {
+    navigate("/"); // Go to home route
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
   };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <div
+          className="flex items-center gap-2 cursor-pointer"
+          onClick={handleLogoClick}
+        >
           <img
             src={logo}
             alt="Monturex Logo"
@@ -21,7 +32,6 @@ const Header = () => {
           />
           <span className="text-xl font-bold">
             <span style={{ color: "#00796c" }}>Monturex</span>
-            {/* <span style={{ color: "black" }}> Security</span> */}
           </span>
         </div>
 
