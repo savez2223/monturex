@@ -16,12 +16,12 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <img
             src={logo}
-            alt="Monto Security Logo"
+            alt="Monturex Logo"
             className="h-8 w-8 object-contain"
           />
           <span className="text-xl font-bold">
-            <span style={{ color: "#14b8a6" }}>Monto</span>
-            <span style={{ color: "black" }}> Security</span>
+            <span style={{ color: "#00796c" }}>Monturex</span>
+            {/* <span style={{ color: "black" }}> Security</span> */}
           </span>
         </div>
 

@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Shield className="h-6 w-6 text-accent" />
-              <span className="text-lg font-bold">Monto Security</span>
+              <span className="text-lg font-bold">Monturex</span>
             </div>
             <p className="text-sm text-primary-foreground/70">
               Protecting your website, inbox, network & firewall with simple,
@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-8 pt-8 text-center text-sm text-primary-foreground/70">
-          <p>Copyright © {currentYear} Monto Security. All rights reserved.</p>
+          <p>Copyright © {currentYear} Monturex. All rights reserved.</p>
         </div>
       </div>
     </footer>
