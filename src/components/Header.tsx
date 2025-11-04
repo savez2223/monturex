@@ -1,6 +1,7 @@
 import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -13,8 +14,15 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Shield className="h-8 w-8 text-accent" />
-          <span className="text-xl font-bold text-primary">Monto Security</span>
+          <img
+            src={logo}
+            alt="Monto Security Logo"
+            className="h-8 w-8 object-contain"
+          />
+          <span className="text-xl font-bold">
+            <span style={{ color: "#14b8a6" }}>Monto</span>
+            <span style={{ color: "black" }}> Security</span>
+          </span>
         </div>
 
         {/* Navigation */}
