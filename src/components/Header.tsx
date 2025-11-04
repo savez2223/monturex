@@ -1,7 +1,7 @@
 import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo1.png";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
