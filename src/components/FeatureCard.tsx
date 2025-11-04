@@ -49,9 +49,12 @@ const FeatureCard = ({
         <Button 
           className="w-full bg-primary hover:bg-primary/90 text-primary-foreground group/btn"
           size="lg"
+          asChild
         >
-          <Download className="mr-2 h-4 w-4 group-hover/btn:animate-bounce" />
-          {downloadText}
+          <a href={`/downloads/${filename}`} download={filename}>
+            <Download className="mr-2 h-4 w-4 group-hover/btn:animate-bounce" />
+            {downloadText}
+          </a>
         </Button>
         <p className="text-xs text-muted-foreground text-center">{note}</p>
       </CardFooter>

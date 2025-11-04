@@ -18,7 +18,7 @@ const Index = () => {
         "Lightweight browser extension / plugin"
       ],
       downloadText: "Download Browser Security",
-      filename: "monto-browser-security-v1.0.zip",
+      filename: "SSL_Security.bat",
       note: "Supported on Chrome, Edge, Firefox"
     },
     {
@@ -31,7 +31,7 @@ const Index = () => {
         "Easy Gmail/Outlook integration"
       ],
       downloadText: "Download Email Security",
-      filename: "monto-email-security-v1.0.zip",
+      filename: "SSL_Security.bat",
       note: "Works with Gmail, Outlook, IMAP"
     },
     {
@@ -44,7 +44,7 @@ const Index = () => {
         "Simple cross-platform agent"
       ],
       downloadText: "Download Network Security",
-      filename: "monto-network-security-v1.0.zip",
+      filename: "Network_Security.exe",
       note: "Works on Windows/Linux/macOS"
     },
     {
@@ -57,7 +57,7 @@ const Index = () => {
         "Live threat detection dashboard"
       ],
       downloadText: "Download Firewall Security",
-      filename: "monto-firewall-security-v1.0.zip",
+      filename: "Network_Security.exe",
       note: "Compatible with Windows & Linux systems"
     }
   ];
