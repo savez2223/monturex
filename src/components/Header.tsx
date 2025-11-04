@@ -5,16 +5,16 @@ import logo from "@/assets/logo1.png";
 const Header = () => {
   const navigate = useNavigate();
 
-  // Scroll to section smoothly
+  // Smooth scroll to a section
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // When clicking logo → go home + scroll to top
+  // Logo click → navigate home + smooth scroll to top
   const handleLogoClick = () => {
-    navigate("/"); // Go to home route
-    window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
+    navigate("/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -40,28 +40,28 @@ const Header = () => {
           <Link
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="text-sm font-medium text-[#111] hover:text-primary transition-colors"
           >
             Home
           </Link>
 
           <button
             onClick={() => scrollToSection("icons")}
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="text-sm font-medium text-[#111] hover:text-primary transition-colors"
           >
             Icons
           </button>
 
           <button
             onClick={() => scrollToSection("features")}
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="text-sm font-medium text-[#111] hover:text-primary transition-colors"
           >
             Download
           </button>
 
           <button
             onClick={() => scrollToSection("contact")}
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="text-sm font-medium text-[#111] hover:text-primary transition-colors"
           >
             Contact
           </button>
