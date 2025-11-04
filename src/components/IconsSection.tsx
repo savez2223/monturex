@@ -1,5 +1,11 @@
 import { Download } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const IconsSection = () => {
@@ -8,35 +14,38 @@ const IconsSection = () => {
       name: "Browser Security",
       file: "browser.ico",
       description: "Professional browser security icon for your applications",
-      category: "Web Security"
+      category: "Web Security",
     },
     {
       name: "Email Security",
       file: "email_security.ico",
-      description: "Email protection and security icon",
-      category: "Communication"
+      description: "Comprehensive Email Protection and Security Tools",
+      category: "Communication",
     },
     {
       name: "Network Security",
       file: "shield.ico",
       description: "Network monitoring and protection shield icon",
-      category: "Network"
+      category: "Network",
     },
     {
       name: "Firewall Security",
       file: "firewall.ico",
-      description: "Firewall defense and protection icon",
-      category: "Defense"
-    }
+      description: "Advanced Firewall Defense and Protection Suite",
+      category: "Defense",
+    },
   ];
 
   return (
     <section id="icons" className="py-20 bg-muted/30">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Security Icons</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Security Icons
+          </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Download professional security icons for your projects and applications
+            Download professional security icons for your projects and
+            applications
           </p>
         </div>
 
@@ -45,8 +54,8 @@ const IconsSection = () => {
             <Card key={index} className="group hover:shadow-lg transition-all">
               <CardHeader className="text-center">
                 <div className="mx-auto mb-4 w-24 h-24 flex items-center justify-center bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
-                  <img 
-                    src={`/downloads/${icon.file}`} 
+                  <img
+                    src={`/downloads/${icon.file}`}
                     alt={icon.name}
                     className="w-16 h-16"
                   />
@@ -60,7 +69,7 @@ const IconsSection = () => {
                 <p className="text-sm text-muted-foreground mb-4 text-center">
                   {icon.description}
                 </p>
-                <Button 
+                <Button
                   className="w-full bg-primary hover:bg-primary/90"
                   asChild
                 >
