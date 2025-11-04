@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import TrustSection from "@/components/TrustSection";
 import HowItWorks from "@/components/HowItWorks";
+import IconsSection from "@/components/IconsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -85,6 +86,7 @@ const Index = () => {
       </section>
       
       <TrustSection />
+      <IconsSection />
       <HowItWorks />
       <Footer />
     </div>
