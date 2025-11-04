@@ -1,4 +1,5 @@
 import { Shield } from "lucide-react";
+import logo from "@/assets/logo1.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Shield className="h-6 w-6 text-accent" />
+              <img
+                src={logo}
+                alt="Monturex Logo"
+                className="h-8 w-8 object-contain"
+              />
               <span className="text-lg font-bold">Monturex</span>
             </div>
             <p className="text-sm text-primary-foreground/70">
