@@ -9,7 +9,7 @@ const Icons = () => {
   const icons = [
     {
       name: "Browser Security",
-      file: "browser.ico",
+      file: "browser_Security.ico",
       description: "Professional browser security icon for your applications. Perfect for browser extensions, security dashboards, and web protection tools.",
       category: "Web Security",
       dimensions: "256x256",
@@ -33,11 +33,11 @@ const Icons = () => {
     },
     {
       name: "Firewall Security",
-      file: "firewall.ico",
+      file: "firewall.png",
       description: "Firewall defense and protection icon. Perfect for firewall applications, security software, and system protection tools.",
       category: "Defense",
-      dimensions: "256x256",
-      format: "ICO"
+      dimensions: "512x512",
+      format: "PNG"
     }
   ];
 

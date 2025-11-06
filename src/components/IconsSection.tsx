@@ -12,7 +12,7 @@ const IconsSection = () => {
   const icons = [
     {
       name: "Browser Security",
-      file: "browser.ico",
+      file: "browser_Security.ico",
       description: "Professional browser security icon for your applications",
       category: "Web Security",
     },
@@ -30,7 +30,7 @@ const IconsSection = () => {
     },
     {
       name: "Firewall Security",
-      file: "firewall.ico",
+      file: "firewall.png",
       description: "Advanced Firewall Defense and Protection Suite",
       category: "Defense",
     },
