@@ -33,11 +33,11 @@ const Icons = () => {
     },
     {
       name: "Firewall Security",
-      file: "firewall.png",
+      file: "firewall_1.ico",
       description: "Firewall defense and protection icon. Perfect for firewall applications, security software, and system protection tools.",
       category: "Defense",
-      dimensions: "512x512",
-      format: "PNG"
+      dimensions: "256x256",
+      format: "ICO"
     }
   ];
 

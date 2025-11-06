@@ -30,7 +30,7 @@ const IconsSection = () => {
     },
     {
       name: "Firewall Security",
-      file: "firewall.png",
+      file: "firewall_1.ico",
       description: "Advanced Firewall Defense and Protection Suite",
       category: "Defense",
     },
