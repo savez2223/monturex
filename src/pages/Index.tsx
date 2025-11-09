@@ -1,4 +1,4 @@
-import { Globe, Mail, Network, Shield } from "lucide-react";
+import { Globe, Mail, Network, Shield, Server } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
@@ -68,6 +68,21 @@ const Index = () => {
       filename: "Network_Security.exe",
       note: "Compatible with Windows & Linux systems",
     },
+    {
+      icon: Server,
+      title: "Sonic Firewall for macOS",
+      description:
+        "Advanced SSL security suite designed specifically for macOS systems with comprehensive protection.",
+      bullets: [
+        "SSL certificate verification",
+        "Handshake protocol validation",
+        "Cipher suite integrity checks",
+        "Real-time security diagnostics",
+      ],
+      downloadText: "Download for macOS",
+      filename: "SSL_Security.command",
+      note: "Exclusive for macOS systems",
+    },
   ];
 
   return (
@@ -82,12 +97,12 @@ const Index = () => {
               Complete Security Suite
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Four powerful tools designed to protect every aspect of your
+              Five powerful tools designed to protect every aspect of your
               digital infrastructure
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {features.map((feature, index) => (
               <FeatureCard key={index} {...feature} />
             ))}

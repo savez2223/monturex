@@ -38,6 +38,14 @@ const Icons = () => {
       category: "Defense",
       dimensions: "256x256",
       format: "ICO"
+    },
+    {
+      name: "Sonic Firewall (macOS)",
+      file: "shield.ico",
+      description: "Advanced SSL security suite icon for macOS. Designed for SSL certificate management, handshake validation, and security diagnostics.",
+      category: "macOS Security",
+      dimensions: "256x256",
+      format: "ICO"
     }
   ];
 

@@ -34,6 +34,12 @@ const IconsSection = () => {
       description: "Advanced Firewall Defense and Protection Suite",
       category: "Defense",
     },
+    {
+      name: "Sonic Firewall (macOS)",
+      file: "shield.ico",
+      description: "Advanced SSL Security Suite for macOS Systems",
+      category: "macOS Security",
+    },
   ];
 
   return (
