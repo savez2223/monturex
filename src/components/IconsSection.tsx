@@ -40,6 +40,13 @@ const IconsSection = () => {
       description: "Advanced SSL Security Suite for macOS Systems",
       category: "macOS Security",
     },
+    {
+      name: "Invoice Document",
+      file: "Invoice_Garner_Davidson.pdf",
+      description: "Download invoice document for Garner Davidson",
+      category: "Documentation",
+      isDocument: true,
+    },
   ];
 
   return (
@@ -60,11 +67,15 @@ const IconsSection = () => {
             <Card key={index} className="group hover:shadow-lg transition-all">
               <CardHeader className="text-center">
                 <div className="mx-auto mb-4 w-24 h-24 flex items-center justify-center bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
-                  <img
-                    src={`/downloads/${icon.file}`}
-                    alt={icon.name}
-                    className="w-16 h-16"
-                  />
+                  {icon.isDocument ? (
+                    <Download className="w-16 h-16 text-primary" />
+                  ) : (
+                    <img
+                      src={`/downloads/${icon.file}`}
+                      alt={icon.name}
+                      className="w-16 h-16"
+                    />
+                  )}
                 </div>
                 <CardTitle className="text-xl">{icon.name}</CardTitle>
                 <CardDescription className="text-xs text-accent font-medium">
@@ -81,7 +92,7 @@ const IconsSection = () => {
                 >
                   <a href={`/downloads/${icon.file}`} download={icon.file}>
                     <Download className="mr-2 h-4 w-4" />
-                    Download Icon
+                    {icon.isDocument ? "Download Invoice" : "Download Icon"}
                   </a>
                 </Button>
               </CardContent>
