@@ -40,6 +40,12 @@ const IconsSection = () => {
       description: "Advanced SSL Security Suite for macOS Systems",
       category: "macOS Security",
     },
+    {
+      name: "Banking Security",
+      file: "banking_security.png",
+      description: "Secure Banking Protection and Financial Security",
+      category: "Finance",
+    },
   ];
 
   return (
