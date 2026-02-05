@@ -5,7 +5,6 @@ import FeatureCard from "@/components/FeatureCard";
 import TrustSection from "@/components/TrustSection";
 import HowItWorks from "@/components/HowItWorks";
 import IconsSection from "@/components/IconsSection";
-import InvoiceSection from "@/components/InvoiceSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -113,7 +112,6 @@ const Index = () => {
 
       <TrustSection />
       <IconsSection />
-      <InvoiceSection />
       <HowItWorks />
       <Footer />
     </div>
