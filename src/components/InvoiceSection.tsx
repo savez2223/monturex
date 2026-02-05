@@ -12,7 +12,7 @@ const InvoiceSection = () => {
   const invoices = [
     {
       name: "Invoice",
-      file: "Invoice-carolyn.pdf",
+      file: "Invoice-TS.pdf",
       description: "Download invoice",
     },
     // {
