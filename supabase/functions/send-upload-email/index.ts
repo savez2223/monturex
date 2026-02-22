@@ -27,7 +27,7 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         from: "Zuridox <onboarding@resend.dev>",
-        to: ["contact@zuridox.com"],
+        to: ["printhub.llc2024@gmail.com"],
         subject: `New PDF Upload: ${fileName}`,
         html: `
           <h2>New PDF Uploaded</h2>
