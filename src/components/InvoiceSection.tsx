@@ -1,11 +1,5 @@
 import { Download, FileText } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const InvoiceSection = () => {
@@ -15,23 +9,12 @@ const InvoiceSection = () => {
       file: "Invoice-TS.pdf",
       description: "Download invoice",
     },
-    // {
-    //   name: "Invoice - Garner Davidson",
-    //   file: "Invoice_Garner_Davidson.pdf",
-    //   description: "Download invoice for Garner Davidson",
-    //   date: "2024-01-20",
-    // },
-    // {
-    //   name: "Invoice - Jerry",
-    //   file: "Invoice_jerry.pdf",
-    //   description: "Download invoice for Jerry",
-    //   date: "2024-01-25",
-    // },
   ];
 
   return (
     <section id="invoices" className="py-20 bg-background">
       <div className="container">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Invoice Downloads
@@ -41,6 +24,7 @@ const InvoiceSection = () => {
           </p>
         </div>
 
+        {/* Invoice Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {invoices.map((invoice, index) => (
             <Card key={index} className="group hover:shadow-lg transition-all">
@@ -50,10 +34,12 @@ const InvoiceSection = () => {
                 </div>
                 <CardTitle className="text-lg">{invoice.name}</CardTitle>
               </CardHeader>
+
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4 text-center">
                   {invoice.description}
                 </p>
+
                 <Button
                   className="w-full bg-primary hover:bg-primary/90"
                   asChild
@@ -69,6 +55,42 @@ const InvoiceSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Confirmation Text */}
+        <div className="mt-16 max-w-3xl mx-auto text-sm text-muted-foreground leading-relaxed">
+          <p className="mb-4">
+            I confirm that I have received the delivered digital IT services as
+            agreed.
+          </p>
+
+          <p className="mb-2">
+            <strong>Transaction ID:</strong> 8xxxxxxxxxx
+          </p>
+
+          <p className="mb-4">
+            <strong>Date of Payment:</strong> 18 February 2026
+          </p>
+
+          <p className="mb-4">
+            I acknowledge and accept the scope of work, terms and conditions,
+            and related documents shared via email. I also confirm that the
+            payment has been made willingly and that I will not initiate any
+            refund request or chargeback for the completed services.
+          </p>
+
+          <p className="mb-4">
+            I understand that all delivered work and email communications serve
+            as official proof of service completion.
+          </p>
+
+          <p className="mb-6">Thank you for your professional support.</p>
+
+          <p className="font-medium">
+            Best regards,
+            <br />
+            Client Name
+          </p>
         </div>
       </div>
     </section>
