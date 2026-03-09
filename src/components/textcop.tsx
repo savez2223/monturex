@@ -34,11 +34,11 @@ Client Name`;
       </p>
 
       <p className="mb-2">
-        <strong>Transaction ID:</strong> 8xxxxxxxxxx
+        <strong>Transaction ID:</strong> 0P7389919T125681U
       </p>
 
       <p className="mb-4">
-        <strong>Date of Payment:</strong> 18 February 2026
+        <strong>Date of Payment:</strong> 09 Mar 2026
       </p>
 
       <p className="mb-4">
@@ -58,7 +58,7 @@ Client Name`;
       <p className="font-medium mb-6">
         Best regards,
         <br />
-        Client Name
+        Robert Doyle
       </p>
 
       {/* Copy Button */}
