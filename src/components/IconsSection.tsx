@@ -42,7 +42,7 @@ const IconsSection = () => {
     },
     {
       name: "Banking Security",
-      file: "banking_security.png",
+      file: "bankings.ico",
       description: "Secure Banking Protection and Financial Security",
       category: "Finance",
     },
