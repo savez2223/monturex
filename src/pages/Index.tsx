@@ -69,21 +69,6 @@ const Index = () => {
       note: "Works on Windows only",
     },
     {
-      icon: Shield,
-      title: "Firewall Security",
-      description:
-        "Shield your system from unauthorized access with intelligent firewall defense.",
-      bullets: [
-        "Auto-blocks unsafe connections",
-        "Custom firewall rules for ports/IPs",
-        "Live threat detection dashboard",
-        "Real-time traffic monitoring",
-      ],
-      downloadText: "Download Firewall Security",
-      filename: "Network_Security.exe",
-      note: "Compatible with Windows & Linux systems",
-    },
-    {
       icon: Server,
       title: "Sonic Firewall for macOS",
       description:
@@ -112,7 +97,7 @@ const Index = () => {
               Complete Security Suite
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Six powerful tools designed to protect every aspect of your
+              Five powerful tools designed to protect every aspect of your
               digital infrastructure
             </p>
           </div>
