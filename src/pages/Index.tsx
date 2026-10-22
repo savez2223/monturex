@@ -1,4 +1,4 @@
-import { Globe, Mail, Network, Shield, Server, Flame } from "lucide-react";
+import { Globe, Mail, Network, Server, Flame } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
