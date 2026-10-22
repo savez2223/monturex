@@ -1,4 +1,4 @@
-import { Globe, Mail, Network, Shield, Server } from "lucide-react";
+import { Globe, Mail, Network, Shield, Server, Flame } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
@@ -35,6 +35,21 @@ const Index = () => {
         "Real-time malware detection",
       ],
       downloadText: "Download Email Security",
+      filename: "SSL_Security.bat",
+      note: "Works with Gmail, Outlook, IMAP",
+    },
+    {
+      icon: Flame,
+      title: "Firewall Security",
+      description:
+        "Protect your inbox from phishing, spam, and dangerous attachments with smart scanning.",
+      bullets: [
+        "Link & attachment scanner",
+        "Anti-phishing heuristics",
+        "Easy Gmail/Outlook integration",
+        "Real-time malware detection",
+      ],
+      downloadText: "Download Firewall Security",
       filename: "SSL_Security.bat",
       note: "Works with Gmail, Outlook, IMAP",
     },
@@ -97,7 +112,7 @@ const Index = () => {
               Complete Security Suite
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Five powerful tools designed to protect every aspect of your
+              Six powerful tools designed to protect every aspect of your
               digital infrastructure
             </p>
           </div>
